@@ -1,10 +1,14 @@
 plugins {
-    kotlin("jvm") version "2.2.21"
+    kotlin("jvm") version "2.4.21"
     application
 }
 
 repositories {
     mavenCentral()
+}
+
+kotlin {
+    jvmToolchain(21)
 }
 
 application {

@@ -2,11 +2,14 @@ This is a very ambitious and definitely not temporary project
 
 ## Hello World (Kotlin)
 
-Run with Gradle:
+Run with the Gradle wrapper (no local Gradle install needed):
 
 ```sh
-gradle run
+./gradlew run        # Windows: gradlew.bat run
 ```
+
+The build compiles against a JDK 21 toolchain. If JDK 21 is not installed,
+Gradle downloads one automatically through the foojay toolchain resolver.
 
 Or with the Kotlin compiler directly:
 
